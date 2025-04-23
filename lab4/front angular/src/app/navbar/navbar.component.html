@@ -1,0 +1,8 @@
+<nav>
+    <ul class="navbar">
+      <li class="username">Пользователь: {{ username }}</li>
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/table" routerLinkActive="active">Table</a></li>
+      <li><button (click)="logout()" class="logout-btn">Logout</button></li>
+    </ul>
+</nav>

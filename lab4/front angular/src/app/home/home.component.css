@@ -1,0 +1,686 @@
+.full-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    font-size: 5rem; 
+  }
+  
+  .uppercase {
+    text-transform: uppercase; 
+    font-weight: bold; 
+  }
+
+  .socket {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -100px;
+  }
+  
+  .hex-brick {
+    background: #000000;
+    width: 30px;
+    height: 17px;
+    position: absolute;
+    top: 5px;
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  .h2 {
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+  }
+  
+  .h3 {
+    transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+  }
+  
+  .gel {
+    height: 30px;
+    width: 30px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .center-gel {
+    margin-left: -15px;
+    margin-top: -15px;
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  .c1 {
+    margin-left: -47px;
+    margin-top: -15px;
+  }
+  
+  .c2 {
+    margin-left: -31px;
+    margin-top: -43px;
+  }
+  
+  .c3 {
+    margin-left: 1px;
+    margin-top: -43px;
+  }
+  
+  .c4 {
+    margin-left: 17px;
+    margin-top: -15px;
+  }
+  
+  .c5 {
+    margin-left: -31px;
+    margin-top: 13px;
+  }
+  
+  .c6 {
+    margin-left: 1px;
+    margin-top: 13px;
+  }
+  
+  .c7 {
+    margin-left: -63px;
+    margin-top: -43px;
+  }
+  
+  .c8 {
+    margin-left: 33px;
+    margin-top: -43px;
+  }
+  
+  .c9 {
+    margin-left: -15px;
+    margin-top: 41px;
+  }
+  
+  .c10 {
+    margin-left: -63px;
+    margin-top: 13px;
+  }
+  
+  .c11 {
+    margin-left: 33px;
+    margin-top: 13px;
+  }
+  
+  .c12 {
+    margin-left: -15px;
+    margin-top: -71px;
+  }
+  
+  .c13 {
+    margin-left: -47px;
+    margin-top: -71px;
+  }
+  
+  .c14 {
+    margin-left: 17px;
+    margin-top: -71px;
+  }
+  
+  .c15 {
+    margin-left: -47px;
+    margin-top: 41px;
+  }
+  
+  .c16 {
+    margin-left: 17px;
+    margin-top: 41px;
+  }
+  
+  .c17 {
+    margin-left: -79px;
+    margin-top: -15px;
+  }
+  
+  .c18 {
+    margin-left: 49px;
+    margin-top: -15px;
+  }
+  
+  .c19 {
+    margin-left: -63px;
+    margin-top: -99px;
+  }
+  
+  .c20 {
+    margin-left: 33px;
+    margin-top: -99px;
+  }
+  
+  .c21 {
+    margin-left: 1px;
+    margin-top: -99px;
+  }
+  
+  .c22 {
+    margin-left: -31px;
+    margin-top: -99px;
+  }
+  
+  .c23 {
+    margin-left: -63px;
+    margin-top: 69px;
+  }
+  
+  .c24 {
+    margin-left: 33px;
+    margin-top: 69px;
+  }
+  
+  .c25 {
+    margin-left: 1px;
+    margin-top: 69px;
+  }
+  
+  .c26 {
+    margin-left: -31px;
+    margin-top: 69px;
+  }
+  
+  .c27 {
+    margin-left: -79px;
+    margin-top: -15px;
+  }
+  
+  .c28 {
+    margin-left: -95px;
+    margin-top: -43px;
+  }
+  
+  .c29 {
+    margin-left: -95px;
+    margin-top: 13px;
+  }
+  
+  .c30 {
+    margin-left: 49px;
+    margin-top: 41px;
+  }
+  
+  .c31 {
+    margin-left: -79px;
+    margin-top: -71px;
+  }
+  
+  .c32 {
+    margin-left: -111px;
+    margin-top: -15px;
+  }
+  
+  .c33 {
+    margin-left: 65px;
+    margin-top: -43px;
+  }
+  
+  .c34 {
+    margin-left: 65px;
+    margin-top: 13px;
+  }
+  
+  .c35 {
+    margin-left: -79px;
+    margin-top: 41px;
+  }
+  
+  .c36 {
+    margin-left: 49px;
+    margin-top: -71px;
+  }
+  
+  .c37 {
+    margin-left: 81px;
+    margin-top: -15px;
+  }
+  
+  .r1 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .2s;
+  }
+  
+  .r2 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .4s;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .4s;
+  }
+  
+  .r3 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .6s;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .6s;
+  }
+  
+  .r1 > .hex-brick {
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .2s;
+  }
+  
+  .r2 > .hex-brick {
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .4s;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .4s;
+  }
+  
+  .r3 > .hex-brick {
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .6s;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .6s;
+  }
+  
+  @keyframes pulse00 {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    50% {
+      -webkit-transform: scale(0.01);
+      transform: scale(0.01);
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fade00 {
+    0% {
+      background: #252525;
+    }
+  
+    50% {
+      background: #000000;
+    }
+  
+    100% {
+      background: #353535;
+    }
+  }
+
+/* ПИЗДА *//* Контейнер для всех RadioButton */
+.radio__container {
+  position: relative;
+  background: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row; /* Горизонтальное расположение радио-кнопок */
+  flex-wrap: wrap; /* Разрешение на перенос */
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  border: 4px solid #000;
+  max-width: 350px;
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform-style: preserve-3d;
+  transform: rotateX(10deg) rotateY(-10deg);
+  perspective: 1000px;
+  box-shadow: 10px 10px 0 #000;
+}
+
+
+/* Эффект при наведении на контейнер RadioButton */
+.radio__container:hover {
+  transform: rotateX(5deg) rotateY(1deg) scale(1.05);
+  box-shadow: 25px 25px 0 -5px #e9b50b, 25px 25px 0 0 #000;
+}
+
+/* Заголовок (замена SELECT OPTION на настраиваемое значение) */
+.radio__container::before {
+  content: attr(data-title); /* Используется атрибут data-title */
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background: #e9b50b;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 14px;
+  transform: translateZ(50px);
+  z-index: 4;
+  border: 2px solid #000;
+}
+
+/* Тень для радио-кнопки */
+.shadow__radio {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: translateZ(-50px);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 107, 107, 0.4) 0%,
+    rgba(255, 107, 107, 0.1) 100%
+  );
+  filter: blur(20px);
+}
+
+/* Стилизация самой радиокнопки */
+.radio__input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  transform: translateZ(10px);
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  display: inline-block;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-right: 10px; /* Отступ между радио-кнопкой и текстом */
+}
+
+/* Стилизация для активного состояния (когда выбрано) */
+.radio__input:checked {
+  background: #e9b50b;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Эффект при наведении и фокусе на радиокнопке */
+.radio__input:hover {
+  background: #f0f0f0;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.radio__input:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Внутреннее содержимое, которое появляется при выборе радиокнопки */
+.radio__input:checked::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Лейбл для радио-кнопки */
+.radio__label {
+  font-family: "Roboto", Arial, sans-serif;
+  letter-spacing: -0.5px;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px; /* Добавляем отступы внутри лейбла */
+  border-radius: 5px; /* Закругленные углы */
+  box-sizing: border-box;
+}
+
+/* Эффект при наведении на лейбл */
+.radio__label:hover {
+  transform: translateZ(5px) translateX(-3px) translateY(-3px);
+  box-shadow: 3px 3px 0 0 #000;
+}
+
+
+.text__container {
+  position: relative;
+  background: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  border: 4px solid #000;
+  max-width: 350px;
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform-style: preserve-3d;
+  transform: rotateX(10deg) rotateY(-10deg);
+  perspective: 1000px;
+  box-shadow: 10px 10px 0 #000;
+}
+
+.text__container:hover {
+  transform: rotateX(5deg) rotateY(1deg) scale(1.05);
+  box-shadow: 25px 25px 0 -5px #e9b50b, 25px 25px 0 0 #000;
+}
+
+.text__container::before {
+  content: attr(data-title);
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background: #e9b50b;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 14px;
+  transform: translateZ(50px);
+  z-index: 4;
+  border: 2px solid #000;
+}
+
+.text__input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #000;
+  border: 3px solid #000;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.text__input:focus {
+  outline: none;
+  background: #f0f0f0;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.text__input:hover {
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.submit__container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.submit__button {
+  background: #f0f0f0;
+  padding: 15px 30px;
+  border: 4px solid #000;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform-style: preserve-3d;
+  transform: rotateX(10deg) rotateY(-10deg);
+  perspective: 1000px;
+  box-shadow: 10px 10px 0 #000;
+}
+
+.submit__button:hover {
+  transform: rotateX(5deg) rotateY(1deg) scale(1.05);
+  box-shadow: 25px 25px 0 -5px #e9b50b, 25px 25px 0 0 #000;
+}
+
+.submit__button:focus {
+  outline: none;
+}
+
+/* ПИЗДА */
+
+.content {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px; /* Отступ от верхней части */
+  padding: 20px; /* Внутренний отступ для всего контейнера */
+  background-color: #f0f4f8; /* Светлый фон для общей области */
+  border-radius: 8px; /* Скругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для объема */
+}
+
+.left-pane {
+  flex: 1;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; /* Белый фон */
+  padding: 20px; /* Внутренний отступ */
+  border: 1px solid #ddd; /* Легкая рамка */
+  border-radius: 8px; /* Скругленные углы */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.left-pane > * {
+  margin-top: 20px; /* Отступ сверху для всех дочерних элементов */
+}
+
+
+
+.radio__container {
+  width: 100%;
+}
+
+.radio__label {
+  display: block;
+  margin-bottom: 8px; /* Отступы между кнопками */
+  font-size: 16px; /* Увеличенный размер шрифта */
+  color: #333; /* Темный цвет текста */
+}
+
+.radio__input {
+  margin-right: 8px; /* Отступ между радио-кнопкой и текстом */
+}
+
+.right-pane {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Белый фон */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: #e9eef2; /* Светло-серый фон */
+  border: 2px dashed #bbb; /* Пунктирная рамка */
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555; /* Темно-серый текст */
+  font-size: 18px; /* Увеличенный размер шрифта */
+  font-style: italic;
+}
+
+/* Пизда */
+
+
+.notifications-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.notification {
+  background-color: #424242;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  opacity: 1;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.notification.fade-out {
+  opacity: 0;
+  transform: translateX(-100px);
+}
