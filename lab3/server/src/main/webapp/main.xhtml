@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <meta charset="UTF-8"/>
+    <title>Лабораторная работа 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.1/jsxgraph.css"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: monospace;
+            background-image: url('icons/back1_right.gif');
+            background-color: #000;
+            color: #ffffff;
+            font-size: 40px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 20px;
+        }
+
+        .coordinates_table, .graphic {
+            background-color: rgba(0, 0, 0, 0.82);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #ffffff;
+        }
+
+        .irs--modern .irs-bar {
+            background-color: #4caf50;
+        }
+
+        .irs--modern .irs-handle {
+            background-color: #000;
+            border: 2px solid #4caf50;
+        }
+
+        .styled-button {
+            background-color: rgba(0, 0, 0, 0.6);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        .coordinates_table {
+            width: 20%;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        .graphic {
+            width: 40%;
+            height: 630px;
+            font-size: 30px;
+            position: relative;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.1/jsxgraphcore.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+</h:head>
+<body>
+<div class="content">
+    <div class="coordinates_table">
+        <h:form id="Form">
+            <p>Выберите X:</p>
+            <h:inputText id = "x" value="#{requestData.x}">
+                <f:ajax render="hiddenX"/>
+            </h:inputText>
+
+
+            <p>Выберите Y:</p>
+            <input type="range" id="y" min="-5" max="5" step="0.1" value="0" oninput="updateOutputY(this.value)" />
+
+            <h:inputText id="yHidden" value="#{requestData.y}" render="output_y" style="display:none;"/>
+
+            <h:inputText id = "output_y" value="0" readonly="true"/>
+
+            <p>Выберите R:</p>
+            <input id="r-slider" type="text" value="1" />
+            <h:inputText id="r" value="#{requestData.r}" style="display:none;"/>
+
+            <h:commandButton id="button" value="Отправить" action="#{requestHandler.handleRequest()}" onclick="return validateForm()" styleClass="styled-button">
+                <f:param name="requestType" value="AREA_CHECK" />
+                <f:ajax execute="@form" render="jxgbox flag r yHidden x" />
+            </h:commandButton>
+
+
+            <div id="error-message" style="display:none; color: red; font-weight: bold;">
+            </div>
+
+
+        </h:form>
+    </div>
+    <div class="graphic" id="jxgbox"></div>
+    <h:form>
+        <h:commandButton value="Таблица" action="#{requestHandler.handleRequest}"
+                         styleClass="styled-button">
+            <f:param name="requestType" value="GET_ALL_REQUESTS" />
+        </h:commandButton>
+    </h:form>
+</div>
+
+<h:outputText id="requests" value="#{dataBase.requests}" escape="false" style="display:none;" />
+
+<script>
+    function updateOutputY(value) {
+        var form = document.getElementById("Form");
+        var outputElement = form.querySelector("#Form\\:output_y");
+        var inputElementHidden = form.querySelector("#Form\\:yHidden");
+
+        if (outputElement &amp;&amp; inputElementHidden) {
+            outputElement.value = value;
+            inputElementHidden.value = value;
+        } else {
+            console.error("Элементы не найдены");
+        }
+    }
+    function validateForm() {
+        var x = parseFloat(document.getElementById("Form:x").value);
+        var y = parseFloat(document.getElementById("Form:yHidden").value);
+        var errorMessage = document.getElementById("error-message");
+
+        if (isNaN(x) || isNaN(y) || x &lt; -5 || x > 5 || y &lt; -5 || y > 5) {
+            errorMessage.style.display = "block";
+
+            if (isNaN(x) || x &lt; -5 || x > 5) {
+                errorMessage.innerText = "X должно быть числом в диапазоне от -5 до 5.";
+            } else if (isNaN(y) || y &lt; -5 || y > 5) {
+                errorMessage.innerText = "Y должно быть числом в диапазоне от -5 до 5.";
+            }
+
+            return false;
+        }
+
+        errorMessage.style.display = "none";
+        return true;
+    }
+
+    var rInput = document.getElementById("Form:r");
+    let radio = rInput.value;
+    let board;
+    let graph1, graph2, graph3, i1, i2, i3;
+    let pointsByR = {};
+
+    function redrawGraphWithNewR(value){
+        radio = value;
+        redrawGraphs();
+    }
+
+    function redrawGraphs() {
+        if (!board) return;
+
+        if (graph1) board.removeObject(graph1);
+        if (graph2) board.removeObject(graph2);
+        if (graph3) board.removeObject(graph3);
+        if (i1) board.removeObject(i1);
+        if (i2) board.removeObject(i2);
+        if (i3) board.removeObject(i3);
+
+        graph1 = board.create('functiongraph', [function (x) {
+            return -x / 2 + (radio / 2);
+        }, 0, radio]);
+
+        i1 = board.create('integral', [[0, radio], graph1], {
+            label: { visible: false },
+            curveLeft: { visible: false },
+            curveRight: { visible: false },
+            baseRight: { visible: false },
+            baseLeft: { visible: false },
+            fillColor: 'white',
+        });
+
+        graph2 = board.create('functiongraph', [function (x) {
+            return radio / 2;
+        }, -radio, 0]);
+
+        i2 = board.create('integral', [[-radio, 0], graph2], {
+            label: { visible: false },
+            curveLeft: { visible: false },
+            curveRight: { visible: false },
+            baseRight: { visible: false },
+            baseLeft: { visible: false },
+            fillColor: 'white',
+        });
+
+        graph3 = board.create('functiongraph', [function (x) {
+            return -Math.sqrt(radio * radio / 4 - x * x);
+        }, -radio / 2, 0]);
+
+        i3 = board.create('integral', [[-radio / 2, 0], graph3], {
+            label: { visible: false },
+            curveLeft: { visible: false },
+            curveRight: { visible: false },
+            baseRight: { visible: false },
+            baseLeft: { visible: false },
+            fillColor: 'white',
+        });
+
+        for (let r in pointsByR) {
+            pointsByR[r].forEach(point => point.setAttribute({ visible: false }));
+        }
+
+        radio = parseInt(radio);
+        if (pointsByR[radio]) {
+            pointsByR[radio].forEach(point => point.setAttribute({ visible: true }));
+        }
+    }
+
+    function checkEnter(x, y, r) {
+        if ((x >= -r &amp;&amp; x &lt;= 0) &amp;&amp; (y >= 0 &amp;&amp; y &lt;= r / 2)) {
+            return true;
+        }
+        if ((x >= 0 &amp;&amp; x &lt;= r) &amp;&amp; (y &lt;= (-x / 2 + r / 2) &amp;&amp; y >= 0)) {
+            return true;
+        }
+        if ((x * x + y * y) &lt;= (r * r) / 4 &amp;&amp; y &lt;= 0 &amp;&amp; x &lt;= 0) {
+            return true;
+        }
+        return false;
+    }
+
+    function redrawPoints() {
+        var requests = $('#requests').text();
+
+        requests = requests.replace(/RequestData\{(.*?)\}/g, function (match, p1) {
+            return '{' + p1.replace(/([a-zA-Z]+)=/g, '"$1":') + '}';
+        });
+
+        try {
+            requests = JSON.parse(requests);
+        } catch (e) {
+            console.error("Ошибка при разборе JSON:", e);
+            requests = [];
+        }
+
+        console.log(requests);
+
+
+        board = JXG.JSXGraph.initBoard("jxgbox", {
+            boundingbox: [-6, 6, 6, -6],
+            axis: true,
+            defaultAxes: {
+                x: {ticks: {color: 'red', drawZero: true, label: {color: 'red'}}},
+                y: {ticks: {color: 'red', label: {color: 'red'}}}
+            }
+        });
+
+        requests.forEach(function (request) {
+            let x = request.x;
+            let y = request.y;
+            let r = request.r;
+            let color = request.flag ? "green" : "red";
+            addPoint(x, y, r, color);
+        });
+
+        function addPoint(x, y, r, color) {
+            let point = board.create('point', [x, y], {name: '', size: 2, color: color});
+            if (!pointsByR[r]) pointsByR[r] = [];
+            pointsByR[r].push(point);
+        }
+    }
+
+    $(document).ready(function () {
+        $("#r-slider").ionRangeSlider({
+            type: "single",
+            min: 1,
+            max: 5,
+            from: radio,
+            step: 1,
+            grid: true,
+            onChange: function (data) {
+                var rInput = document.getElementById("Form:r");
+                rInput.value = data.from;
+
+                redrawGraphWithNewR(data.from);
+            }
+        });
+
+
+        redrawPoints();
+        redrawGraphs();
+        var graph_flag = false;
+        var getMouseCoords = function (e, i) {
+                var pos = board.getMousePosition(e, i);
+                return new JXG.Coords(JXG.COORDS_BY_SCREEN, pos, board);
+            },
+
+            handleDown = function (e) {
+                var canCreate = true,
+                    i, coords, el;
+
+                if (e[JXG.touchProperty]) {
+                    i = 0;
+                }
+                coords = getMouseCoords(e, i);
+
+                for (el in board.objects) {
+                    if (JXG.isPoint(board.objects[el]) &amp;&amp; board.objects[el].hasPoint(coords.scrCoords[1], coords.scrCoords[2])) {
+                        canCreate = false;
+                        break;
+                    }
+                }
+
+                if (canCreate) {
+                    var color;
+                    var xInput = document.getElementById("Form:x");
+                    var yInput = document.getElementById("Form:yHidden");
+
+                    xInput.value = coords.usrCoords[1];
+                    yInput.value = coords.usrCoords[2];
+
+                    graph_flag = true;
+                    document.getElementById('Form:button').click();
+
+                    if (checkEnter(coords.usrCoords[1], coords.usrCoords[2], radio)) color = "green";
+                    else color = "red";
+                    let point = board.create('point', [coords.usrCoords[1], coords.usrCoords[2]], {name: '', size: 2, color: color});
+
+                    if (!pointsByR[radio]) pointsByR[radio] = [];
+                    pointsByR[radio].push(point);
+                    graph_flag = false;
+                }
+            };
+
+        board.on('down', handleDown);
+
+        $('#Form\\:button').click(function () {
+            if (!graph_flag) {
+                var xInput = document.getElementById("Form:x");
+                var yInput = document.getElementById("Form:yHidden");
+                var rInput = document.getElementById("Form:r");
+
+                let x = xInput.value;
+                let y = yInput.value;
+                let r = rInput.value;
+                var flag = checkEnter(x, y, r);
+                console.log(x);
+                console.log(y);
+                console.log(r);
+                console.log(flag);
+                if (flag) {
+                    var point = board.create('point', [x, y], {
+                        color: 'green',
+                        size: 2,
+                        label: {visible: false}
+                    });
+                } else {
+                    var point = board.create('point', [x, y], {
+                        color: 'red',
+                        label: {visible: false}
+                    });
+                }
+                if (!pointsByR[r]) pointsByR[r] = [];
+                pointsByR[r].push(point);
+            }
+        });
+    });
+</script>
+</body>
+</html>

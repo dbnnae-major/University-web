@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>Test</title>
+    <meta charset="UTF-8" />
+    <style>
+        body {
+            margin: 0;
+            font-family: monospace;
+            background-image: url('icons/back1_right.gif');
+            background-color: #000;
+            color: #ffffff;
+            font-size: 40px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            transition: background-image 0.5s ease;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.82);
+            gap: 20px;
+            padding: 10px;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        #clock {
+            position: absolute;
+            top: 120px;
+            right: 20px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.82);
+            color: #ffffff;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        .styled-button {
+            background-color: rgba(0, 0, 0, 0.6);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        .styled-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 0.9;
+        }
+
+        body:hover {
+            background-image: url('icons/back2.gif');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</h:head>
+<h:body>
+    <header>
+        <p>Дубинин Артём Сергеевич</p>
+        <p>Номер варианта: 374</p>
+        <p>Номер группы: Р3215</p>
+    </header>
+    <div id="clock"></div>
+    <h:form>
+        <h:commandButton value="Перейти на следующую страницу" action="goToNextPage" styleClass="styled-button" />
+    </h:form>
+    <script>
+        window.onload = function(){
+            window.setInterval(function(){
+                var now = new Date();
+                var clock = document.getElementById("clock");
+                clock.innerHTML = now.toLocaleTimeString();
+            }, 1000);
+        };
+
+        document.body.addEventListener('mouseenter', function() {
+            document.body.style.transition = 'background-image 0.5s ease';
+            document.body.style.backgroundImage = 'url("icons/back2.gif")';
+        });
+
+        document.body.addEventListener('mouseleave', function() {
+            document.body.style.transition = 'background-image 0.5s ease';
+            document.body.style.backgroundImage = 'url("icons/back1_right.gif")';
+        });
+    </script>
+</h:body>
+</html>
