@@ -1,0 +1,893 @@
+2024-12-29 00:13:53,145 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 00:13:53,149 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:13:53,150 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 00:13:53,158 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 00:13:53,167 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 84) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-29 00:13:53,170 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2024-12-29 00:13:53,170 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:13:53,172 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 00:13:53,178 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 86) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 00:13:53,179 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-4) Stopping cache manager null on null
+2024-12-29 00:13:53,194 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 00:13:53,194 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 00:13:53,196 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 00:13:53,196 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 00:13:53,198 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 00:13:53,204 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 50ms
+2024-12-29 00:13:53,209 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 57ms
+2024-12-29 00:14:05,653 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 00:14:05,676 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:14:05,697 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:14:05,781 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 00:14:05,826 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:14:05,929 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 00:14:06,416 WARN  [org.jboss.as.ee] (MSC service thread 1-8) WFLYEE0007: Not installing optional component org.example.servlets.AreaCheckServlet due to an exception (enable DEBUG log level to see the cause)
+2024-12-29 00:14:06,545 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: org.jboss.msc.service.StartException in service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:1075)
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.start(UndertowDeploymentInfoService.java:276)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:708)
+	... 9 more
+
+2024-12-29 00:14:06,688 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-2) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 00:14:06,700 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 00:14:06,868 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 00:14:06,941 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "Server-1.0-SNAPSHOT.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"Server-1.0-SNAPSHOT.war\".undertow-deployment.UndertowDeploymentInfoService" => "java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module \"deployment.Server-1.0-SNAPSHOT.war\" from Service Module Loader]
+    Caused by: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module \"deployment.Server-1.0-SNAPSHOT.war\" from Service Module Loader]"}}
+2024-12-29 00:14:06,950 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:14:06,952 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+WFLYCTL0448: 2 additional services are down due to their dependencies being missing or failed
+2024-12-29 00:14:06,995 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 00:14:06,997 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started (with errors) in 4263ms - Started 419 of 653 services (4 services failed or missing dependencies, 375 services are lazy, passive or on-demand)
+2024-12-29 00:14:06,998 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 00:14:06,999 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 00:23:51,594 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 00:23:51,595 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:23:51,596 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 00:23:51,603 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 00:23:51,604 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2024-12-29 00:23:51,608 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:23:51,615 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 00:23:51,619 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 86) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 00:23:51,621 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-7) Stopping cache manager null on null
+2024-12-29 00:23:51,628 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 00:23:51,628 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 00:23:51,628 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 00:23:51,629 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 00:23:51,631 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 00:23:51,638 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 38ms
+2024-12-29 00:23:51,644 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 45ms
+2024-12-29 00:29:03,116 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 00:29:03,135 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:29:03,143 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:29:03,218 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 00:29:03,265 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:29:03,375 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 00:29:03,924 WARN  [org.jboss.as.ee] (MSC service thread 1-8) WFLYEE0007: Not installing optional component org.example.servlets.AreaCheckServlet due to an exception (enable DEBUG log level to see the cause)
+2024-12-29 00:29:04,055 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: org.jboss.msc.service.StartException in service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:1075)
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.start(UndertowDeploymentInfoService.java:276)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1363)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:708)
+	... 9 more
+
+2024-12-29 00:29:04,206 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-4) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 00:29:04,220 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 00:29:04,379 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 00:29:04,447 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "Server-1.0-SNAPSHOT.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"Server-1.0-SNAPSHOT.war\".undertow-deployment.UndertowDeploymentInfoService" => "java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module \"deployment.Server-1.0-SNAPSHOT.war\" from Service Module Loader]
+    Caused by: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module \"deployment.Server-1.0-SNAPSHOT.war\" from Service Module Loader]"}}
+2024-12-29 00:29:04,455 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:29:04,456 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+WFLYCTL0448: 2 additional services are down due to their dependencies being missing or failed
+2024-12-29 00:29:04,492 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 00:29:04,495 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started (with errors) in 4144ms - Started 419 of 653 services (4 services failed or missing dependencies, 375 services are lazy, passive or on-demand)
+2024-12-29 00:29:04,497 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 00:29:04,497 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 00:29:12,330 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 00:29:12,333 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:29:12,335 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 00:29:12,357 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 00:29:12,357 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2024-12-29 00:29:12,359 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:29:12,366 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 00:29:12,376 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 80) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 00:29:12,378 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-5) Stopping cache manager null on null
+2024-12-29 00:29:12,389 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 00:29:12,390 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 00:29:12,390 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 00:29:12,390 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 00:29:12,392 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 00:29:12,400 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 57ms
+2024-12-29 00:29:12,406 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 63ms
+2024-12-29 00:36:53,030 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 00:36:53,056 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:36:53,105 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:36:53,155 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 00:36:53,219 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:36:53,268 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 00:36:53,783 WARN  [org.jboss.as.ee] (MSC service thread 1-2) WFLYEE0007: Not installing optional component org.example.servlets.AreaCheckServlet due to an exception (enable DEBUG log level to see the cause)
+2024-12-29 00:36:53,918 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: org.jboss.msc.service.StartException in service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:1075)
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.start(UndertowDeploymentInfoService.java:276)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:708)
+	... 9 more
+
+2024-12-29 00:36:54,090 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-2) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 00:36:54,123 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 00:36:54,289 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 00:36:54,356 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "Server-1.0-SNAPSHOT.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"Server-1.0-SNAPSHOT.war\".undertow-deployment.UndertowDeploymentInfoService" => "java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module \"deployment.Server-1.0-SNAPSHOT.war\" from Service Module Loader]
+    Caused by: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module \"deployment.Server-1.0-SNAPSHOT.war\" from Service Module Loader]"}}
+2024-12-29 00:36:54,364 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:36:54,365 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+WFLYCTL0448: 2 additional services are down due to their dependencies being missing or failed
+2024-12-29 00:36:54,405 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 00:36:54,408 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started (with errors) in 4107ms - Started 419 of 653 services (4 services failed or missing dependencies, 375 services are lazy, passive or on-demand)
+2024-12-29 00:36:54,410 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 00:36:54,410 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 00:41:37,737 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 00:41:37,738 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:41:37,740 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 00:41:37,766 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 00:41:37,768 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2024-12-29 00:41:37,770 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:41:37,780 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 00:41:37,805 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 84) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 00:41:37,807 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-3) Stopping cache manager null on null
+2024-12-29 00:41:37,842 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 00:41:37,843 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 00:41:37,843 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 00:41:37,844 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 00:41:37,846 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 00:41:37,865 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 117ms
+2024-12-29 00:41:37,880 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 135ms
+2024-12-29 00:41:44,891 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 00:41:44,929 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:41:44,946 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:41:45,010 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 00:41:45,048 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:41:45,116 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 00:41:45,607 WARN  [org.jboss.as.ee] (MSC service thread 1-3) WFLYEE0007: Not installing optional component org.example.servlets.AreaCheckServlet due to an exception (enable DEBUG log level to see the cause)
+2024-12-29 00:41:45,734 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: org.jboss.msc.service.StartException in service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:1075)
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.start(UndertowDeploymentInfoService.java:276)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:708)
+	... 9 more
+
+2024-12-29 00:41:45,880 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-6) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 00:41:45,891 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 00:41:46,045 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 00:41:46,112 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "Server-1.0-SNAPSHOT.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"Server-1.0-SNAPSHOT.war\".undertow-deployment.UndertowDeploymentInfoService" => "java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module \"deployment.Server-1.0-SNAPSHOT.war\" from Service Module Loader]
+    Caused by: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module \"deployment.Server-1.0-SNAPSHOT.war\" from Service Module Loader]"}}
+2024-12-29 00:41:46,121 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:41:46,122 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+WFLYCTL0448: 2 additional services are down due to their dependencies being missing or failed
+2024-12-29 00:41:46,158 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 00:41:46,161 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started (with errors) in 4031ms - Started 419 of 653 services (4 services failed or missing dependencies, 375 services are lazy, passive or on-demand)
+2024-12-29 00:41:46,162 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 00:41:46,162 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 00:43:59,294 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 00:43:59,299 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:43:59,303 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 00:43:59,334 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 00:43:59,336 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2024-12-29 00:43:59,340 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:43:59,358 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 00:43:59,375 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 84) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 00:43:59,379 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-6) Stopping cache manager null on null
+2024-12-29 00:43:59,436 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 00:43:59,437 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 00:43:59,437 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 00:43:59,438 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 00:43:59,441 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 00:43:59,458 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 149ms
+2024-12-29 00:43:59,469 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 163ms
+2024-12-29 00:44:15,289 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 00:44:15,311 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:44:15,323 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:44:15,388 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 00:44:15,444 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:44:15,541 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 00:44:16,022 WARN  [org.jboss.as.ee] (MSC service thread 1-5) WFLYEE0007: Not installing optional component org.example.servlets.AreaCheckServlet due to an exception (enable DEBUG log level to see the cause)
+2024-12-29 00:44:16,151 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: org.jboss.msc.service.StartException in service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:1075)
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.start(UndertowDeploymentInfoService.java:276)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.11.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1363)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at org.wildfly.extension.undertow@20.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService.createServletConfig(UndertowDeploymentInfoService.java:708)
+	... 9 more
+
+2024-12-29 00:44:16,322 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-6) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 00:44:16,333 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 00:44:16,482 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 00:44:16,555 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "Server-1.0-SNAPSHOT.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"Server-1.0-SNAPSHOT.war\".undertow-deployment.UndertowDeploymentInfoService" => "java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module \"deployment.Server-1.0-SNAPSHOT.war\" from Service Module Loader]
+    Caused by: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module \"deployment.Server-1.0-SNAPSHOT.war\" from Service Module Loader]"}}
+2024-12-29 00:44:16,567 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:44:16,568 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."Server-1.0-SNAPSHOT.war".undertow-deployment.UndertowDeploymentInfoService: java.lang.ClassNotFoundException: org.example.servlets.AreaCheckServlet from [Module "deployment.Server-1.0-SNAPSHOT.war" from Service Module Loader]
+WFLYCTL0448: 2 additional services are down due to their dependencies being missing or failed
+2024-12-29 00:44:16,618 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 00:44:16,620 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started (with errors) in 4063ms - Started 419 of 653 services (4 services failed or missing dependencies, 375 services are lazy, passive or on-demand)
+2024-12-29 00:44:16,621 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 00:44:16,621 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 00:47:46,639 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 00:47:46,640 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:47:46,641 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 00:47:46,651 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 00:47:46,651 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2024-12-29 00:47:46,652 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:47:46,662 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 00:47:46,668 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 81) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 00:47:46,670 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-6) Stopping cache manager null on null
+2024-12-29 00:47:46,680 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 00:47:46,680 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 00:47:46,681 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 00:47:46,681 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 00:47:46,683 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 00:47:46,690 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 43ms
+2024-12-29 00:47:46,696 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 49ms
+2024-12-29 00:47:56,267 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 00:47:56,294 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:47:56,328 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:47:56,384 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 00:47:56,459 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:47:56,483 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 00:47:57,290 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-4) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 00:47:57,303 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 00:47:57,466 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 00:47:57,529 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-29 00:47:57,579 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:47:57,627 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 00:47:57,630 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 4077ms - Started 428 of 657 services (375 services are lazy, passive or on-demand)
+2024-12-29 00:47:57,631 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 00:47:57,632 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 00:57:30,775 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 00:57:30,777 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:57:30,778 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 00:57:30,787 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 00:57:30,797 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 85) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-29 00:57:30,812 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:57:30,815 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 00:57:30,816 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2024-12-29 00:57:30,823 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 85) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 00:57:30,824 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-8) Stopping cache manager null on null
+2024-12-29 00:57:30,833 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 00:57:30,833 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 00:57:30,834 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 00:57:30,834 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 00:57:30,835 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 00:57:30,843 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 59ms
+2024-12-29 00:57:30,847 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 64ms
+2024-12-29 00:57:41,749 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 00:57:41,766 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:57:41,796 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:57:41,847 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 00:57:41,872 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:57:41,929 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 00:57:42,624 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-3) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 00:57:42,635 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 00:57:42,804 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 00:57:42,863 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-29 00:57:42,913 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 00:57:42,949 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 00:57:42,951 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 3762ms - Started 428 of 657 services (375 services are lazy, passive or on-demand)
+2024-12-29 00:57:42,952 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 00:57:42,952 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 00:59:29,598 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 00:59:29,601 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 00:59:29,605 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 00:59:29,626 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 00:59:29,642 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-29 00:59:29,676 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 00:59:29,682 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 00:59:29,685 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+2024-12-29 00:59:29,707 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 86) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 00:59:29,713 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-3) Stopping cache manager null on null
+2024-12-29 00:59:29,757 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 00:59:29,757 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 00:59:29,758 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 00:59:29,759 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 00:59:29,761 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 00:59:29,781 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 165ms
+2024-12-29 00:59:29,796 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 182ms
+2024-12-29 01:00:11,862 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 01:00:11,889 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 01:00:11,929 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 01:00:11,973 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 01:00:12,046 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 01:00:12,119 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 01:00:12,907 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-7) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 01:00:12,924 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 01:00:13,091 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 01:00:13,158 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-29 01:00:13,207 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 01:00:13,241 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 01:00:13,244 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 4116ms - Started 428 of 657 services (375 services are lazy, passive or on-demand)
+2024-12-29 01:00:13,246 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 01:00:13,246 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 01:00:19,747 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 01:00:20,676 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 01:00:21,320 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 01:00:21,692 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 01:00:22,030 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 01:00:44,802 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 01:00:44,803 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 01:00:44,804 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 01:00:44,813 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 01:00:44,817 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-29 01:00:44,820 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2024-12-29 01:00:44,820 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 01:00:44,822 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 01:00:44,827 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 86) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 01:00:44,828 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-8) Stopping cache manager null on null
+2024-12-29 01:00:44,840 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 01:00:44,840 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 01:00:44,841 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 01:00:44,841 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 01:00:44,842 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 01:00:44,845 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 36ms
+2024-12-29 01:00:44,851 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 46ms
+2024-12-29 07:16:46,388 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 07:16:46,397 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 07:16:46,410 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 07:16:46,432 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 07:16:46,496 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 07:16:47,899 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2024-12-29 07:16:47,899 WARN  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0013: Deployment Server-1.0-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2024-12-29 07:16:47,939 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 07:16:48,098 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-8) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 07:16:48,110 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 07:16:48,307 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 07:16:48,383 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 81) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-29 07:16:48,422 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 07:16:48,451 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 07:16:48,453 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 4865ms - Started 433 of 662 services (375 services are lazy, passive or on-demand)
+2024-12-29 07:16:48,454 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 07:16:48,454 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 07:18:50,606 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 07:18:50,607 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 07:18:50,608 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 07:18:50,613 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 07:18:50,619 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 07:18:50,625 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-29 07:18:50,629 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2024-12-29 07:18:50,630 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 07:18:50,632 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 07:18:50,638 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 90) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 07:18:50,639 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-2) Stopping cache manager null on null
+2024-12-29 07:18:50,650 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 07:18:50,650 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 07:18:50,650 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 07:18:50,650 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 07:18:50,651 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 07:18:50,680 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 66ms
+2024-12-29 07:18:50,685 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 75ms
+2024-12-29 07:19:04,210 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 07:19:04,230 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 07:19:04,246 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 07:19:04,329 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 07:19:04,363 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 07:19:04,419 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 07:19:06,090 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2024-12-29 07:19:06,091 WARN  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0013: Deployment Server-1.0-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2024-12-29 07:19:06,182 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 07:19:06,383 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-1) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 07:19:06,395 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 07:19:06,587 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 07:19:06,670 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-29 07:19:06,724 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 07:19:06,770 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 07:19:06,774 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 5512ms - Started 433 of 662 services (375 services are lazy, passive or on-demand)
+2024-12-29 07:19:06,776 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 07:19:06,776 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 07:19:30,802 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:19:30,803 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:19:30,836 INFO  [org.hibernate.Version] (default task-1) HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-12-29 07:19:30,950 WARN  [org.hibernate.orm.deprecation] (default task-1) HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-12-29 07:19:31,087 INFO  [org.hibernate.annotations.common.Version] (default task-1) HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-29 07:19:31,132 WARN  [org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator] (default task-1) HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-12-29 07:19:31,133 WARN  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-12-29 07:19:31,133 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/postgres]
+2024-12-29 07:19:31,133 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-29 07:19:31,134 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001003: Autocommit mode: false
+2024-12-29 07:19:31,135 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-1) HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-12-29 07:19:31,244 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-29 07:19:31,264 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2024-12-29 07:19:31,401 INFO  [org.hibernate.validator.internal.util.Version] (default task-1) HV000001: Hibernate Validator 6.0.20.Final
+2024-12-29 07:19:31,683 INFO  [org.hibernate.orm.connections.access] (default task-1) HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5162c8bb] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-29 07:19:31,713 INFO  [stdout] (default task-1) Hibernate: create table Users (id  bigserial not null, login varchar(255), password varchar(255), primary key (id))
+2024-12-29 07:19:31,733 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (default task-1) HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2024-12-29 07:19:31,836 INFO  [stdout] (default task-1) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.r as r3_0_, requestdat0_.x as x4_0_, requestdat0_.y as y5_0_ from Requests requestdat0_
+2024-12-29 07:19:31,855 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:20:11,631 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:20:11,631 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for registration
+2024-12-29 07:22:20,084 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 07:22:20,086 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 07:22:20,088 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 07:22:20,095 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 07:22:20,104 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 07:22:20,114 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-29 07:22:20,118 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 07:22:20,119 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 07:22:20,121 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2024-12-29 07:22:20,126 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 87) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 07:22:20,128 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-7) Stopping cache manager null on null
+2024-12-29 07:22:20,144 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 07:22:20,144 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 07:22:20,144 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 07:22:20,144 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 07:22:20,146 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 07:22:20,195 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 97ms
+2024-12-29 07:22:20,206 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 115ms
+2024-12-29 07:22:36,325 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 07:22:36,341 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 07:22:36,344 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 07:22:36,408 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 07:22:36,408 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 07:22:36,471 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 07:22:38,180 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2024-12-29 07:22:38,181 WARN  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0013: Deployment Server-1.0-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2024-12-29 07:22:38,281 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 07:22:38,568 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-8) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 07:22:38,587 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 07:22:38,788 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 07:22:38,876 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-29 07:22:38,947 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 07:22:38,987 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 07:22:38,990 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 5485ms - Started 433 of 662 services (375 services are lazy, passive or on-demand)
+2024-12-29 07:22:38,991 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 07:22:38,991 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 07:22:58,242 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:22:58,243 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:22:58,276 INFO  [org.hibernate.Version] (default task-1) HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-12-29 07:22:58,392 WARN  [org.hibernate.orm.deprecation] (default task-1) HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-12-29 07:22:58,528 INFO  [org.hibernate.annotations.common.Version] (default task-1) HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-29 07:22:58,574 WARN  [org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator] (default task-1) HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-12-29 07:22:58,575 WARN  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-12-29 07:22:58,576 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/postgres]
+2024-12-29 07:22:58,576 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-29 07:22:58,576 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001003: Autocommit mode: false
+2024-12-29 07:22:58,578 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-1) HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-12-29 07:22:58,695 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-29 07:22:58,718 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2024-12-29 07:22:58,843 INFO  [org.hibernate.validator.internal.util.Version] (default task-1) HV000001: Hibernate Validator 6.0.20.Final
+2024-12-29 07:22:59,164 INFO  [org.hibernate.orm.connections.access] (default task-1) HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6c4a0586] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-29 07:22:59,187 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (default task-1) HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2024-12-29 07:22:59,277 INFO  [stdout] (default task-1) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.r as r3_0_, requestdat0_.x as x4_0_, requestdat0_.y as y5_0_ from Requests requestdat0_
+2024-12-29 07:22:59,296 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:23:14,901 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:23:14,902 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for registration
+2024-12-29 07:23:14,908 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:23:14,984 INFO  [stdout] (default task-1) Hibernate: insert into Users (login, password) values (?, ?)
+2024-12-29 07:23:33,929 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:23:33,929 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:23:33,929 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:23:33,931 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:24:54,666 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:24:54,666 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:24:54,667 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:24:54,668 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:26:46,836 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:26:46,837 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:26:46,837 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:26:49,604 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:26:49,605 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:26:49,605 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:26:52,038 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:26:52,039 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:26:52,039 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:26:52,243 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:26:52,243 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:26:52,243 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:26:52,389 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:26:52,389 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:26:52,391 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:26:52,540 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:26:52,540 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:26:52,540 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:26:58,244 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:26:58,244 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for registration
+2024-12-29 07:26:58,244 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:26:58,305 INFO  [stdout] (default task-1) Hibernate: insert into Users (login, password) values (?, ?)
+2024-12-29 07:28:26,918 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:26,918 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:26,919 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:28,688 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:28,688 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:28,688 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:29,200 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:29,200 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:29,200 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:30,398 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:30,398 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:30,399 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:30,563 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:30,563 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:30,564 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:30,704 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:30,705 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:30,705 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:30,835 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:30,835 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:30,835 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:31,537 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:31,538 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:31,538 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:31,949 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:31,949 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:31,949 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:34,992 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:34,993 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:34,993 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:35,979 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:35,979 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:35,979 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:37,039 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:37,039 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:37,040 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:37,543 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:37,544 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:37,544 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:39,446 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:39,446 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:39,447 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:42,102 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:42,102 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:42,103 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:42,730 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:42,730 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:42,731 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:48,005 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:48,005 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:48,005 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:48,303 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:48,304 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:48,304 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:48,482 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:48,482 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:48,483 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:28:48,640 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:28:48,641 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:28:48,641 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:31:41,039 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:31:41,039 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:31:41,040 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:31:46,119 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:31:46,119 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:31:46,119 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:31:49,026 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:31:49,026 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:31:49,027 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:31:50,860 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:31:50,860 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:31:50,861 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:31:51,153 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:31:51,153 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:31:51,153 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:31:51,294 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:31:51,294 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:31:51,295 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:31:51,435 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:31:51,435 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:31:51,435 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:32:34,447 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\a9\f0b0246d0533541ae32b6ddc468cd8df9201d7 is obsolete and will be removed
+2024-12-29 07:32:34,461 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\a9\f0b0246d0533541ae32b6ddc468cd8df9201d7\content
+2024-12-29 07:32:34,461 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\97\ca24cd34d0c9e78b41409be663cb6db86ee01f is obsolete and will be removed
+2024-12-29 07:32:34,462 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\97\ca24cd34d0c9e78b41409be663cb6db86ee01f\content
+2024-12-29 07:32:34,462 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\d3\9b4bc27ccbdafeb6e892d551339409abef56b2 is obsolete and will be removed
+2024-12-29 07:32:34,468 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\d3\9b4bc27ccbdafeb6e892d551339409abef56b2\content
+2024-12-29 07:32:34,468 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\c3\559637998dfc10fb292e2034a70f77edd5ff67 is obsolete and will be removed
+2024-12-29 07:32:34,470 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\c3\559637998dfc10fb292e2034a70f77edd5ff67\content
+2024-12-29 07:32:34,470 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\89\227a581d16cb1c1b98f5b457baacb1aedf6dfa is obsolete and will be removed
+2024-12-29 07:32:34,471 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\89\227a581d16cb1c1b98f5b457baacb1aedf6dfa\content
+2024-12-29 07:32:34,471 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\c4\c589ac866050c0589f5a30e7d0ec7bac343461 is obsolete and will be removed
+2024-12-29 07:32:34,473 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\c4\c589ac866050c0589f5a30e7d0ec7bac343461\content
+2024-12-29 07:32:34,473 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\7a\a70934270d6201990c566a4561789d640add33 is obsolete and will be removed
+2024-12-29 07:32:34,474 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\7a\a70934270d6201990c566a4561789d640add33\content
+2024-12-29 07:32:34,474 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\e7\67b5f345e7a42225003f649d076f1efb466c8e is obsolete and will be removed
+2024-12-29 07:32:34,475 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\e7\67b5f345e7a42225003f649d076f1efb466c8e\content
+2024-12-29 07:32:34,476 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\ee\2c056cb8fa9ba44c92241ea780942aa24213e6 is obsolete and will be removed
+2024-12-29 07:32:34,477 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 41) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\ee\2c056cb8fa9ba44c92241ea780942aa24213e6\content
+2024-12-29 07:33:22,849 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:33:22,849 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:33:22,850 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:33:23,207 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:33:23,207 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:33:23,207 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:33:24,206 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 07:33:24,206 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 07:33:24,207 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 07:34:54,580 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 07:34:54,581 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 07:34:54,582 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 07:34:54,590 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 07:34:54,595 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 07:34:54,601 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-29 07:34:54,605 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2024-12-29 07:34:54,605 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 07:34:54,606 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 07:34:54,611 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 90) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 07:34:54,612 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-5) Stopping cache manager null on null
+2024-12-29 07:34:54,621 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 07:34:54,621 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 07:34:54,622 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 07:34:54,622 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 07:34:54,622 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 07:34:54,644 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 55ms
+2024-12-29 07:34:54,648 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 64ms
+2024-12-29 08:31:29,560 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 08:31:29,575 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "Backend-1.0-SNAPSHOT.war" (runtime-name: "Backend-1.0-SNAPSHOT.war")
+2024-12-29 08:31:29,578 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 08:31:29,637 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 08:31:29,643 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 08:31:29,718 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 08:31:31,430 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2024-12-29 08:31:31,431 WARN  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0013: Deployment Backend-1.0-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2024-12-29 08:31:31,503 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = Backend-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 08:31:31,697 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-3) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 08:31:31,709 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 08:31:31,879 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 08:31:31,955 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/Backend-1.0-SNAPSHOT' for server 'default-server'
+2024-12-29 08:31:32,000 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Backend-1.0-SNAPSHOT.war" (runtime-name : "Backend-1.0-SNAPSHOT.war")
+2024-12-29 08:31:32,030 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 08:31:32,032 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 5323ms - Started 433 of 662 services (375 services are lazy, passive or on-demand)
+2024-12-29 08:31:32,034 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 08:31:32,034 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 08:37:57,657 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 08:37:57,671 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 08:37:57,677 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 08:37:57,695 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = Backend-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 08:37:57,701 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 08:37:57,723 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 20) WFLYUT0022: Unregistered web context: '/Backend-1.0-SNAPSHOT' from server 'default-server'
+2024-12-29 08:37:57,734 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 08:37:57,739 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 08:37:57,740 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+2024-12-29 08:37:57,753 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 86) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 08:37:57,755 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-4) Stopping cache manager null on null
+2024-12-29 08:37:57,772 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 08:37:57,772 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 08:37:57,773 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 08:37:57,774 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 08:37:57,777 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 08:37:57,852 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment Backend-1.0-SNAPSHOT.war (runtime-name: Backend-1.0-SNAPSHOT.war) in 170ms
+2024-12-29 08:37:57,861 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 178ms
+2024-12-29 08:42:47,404 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 08:42:47,426 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "Backend-1.0-SNAPSHOT.war" (runtime-name: "Backend-1.0-SNAPSHOT.war")
+2024-12-29 08:42:47,455 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 08:42:47,526 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 08:42:47,553 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 08:42:47,614 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 08:42:49,685 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2024-12-29 08:42:49,685 WARN  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0013: Deployment Backend-1.0-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2024-12-29 08:42:49,772 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = Backend-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 08:42:49,961 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-7) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 08:42:49,976 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 08:42:50,148 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 08:42:50,217 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-29 08:42:50,274 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Backend-1.0-SNAPSHOT.war" (runtime-name : "Backend-1.0-SNAPSHOT.war")
+2024-12-29 08:42:50,313 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 08:42:50,315 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 6038ms - Started 433 of 662 services (375 services are lazy, passive or on-demand)
+2024-12-29 08:42:50,317 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 08:42:50,317 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 08:43:04,087 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 08:43:04,089 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 08:43:04,145 INFO  [org.hibernate.Version] (default task-1) HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-12-29 08:43:04,402 WARN  [org.hibernate.orm.deprecation] (default task-1) HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-12-29 08:43:04,825 INFO  [org.hibernate.annotations.common.Version] (default task-1) HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-29 08:43:04,935 WARN  [org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator] (default task-1) HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-12-29 08:43:04,938 WARN  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-12-29 08:43:04,938 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/postgres]
+2024-12-29 08:43:04,938 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-29 08:43:04,938 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001003: Autocommit mode: false
+2024-12-29 08:43:04,940 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-1) HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-12-29 08:43:05,229 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-29 08:43:05,283 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2024-12-29 08:43:05,630 INFO  [org.hibernate.validator.internal.util.Version] (default task-1) HV000001: Hibernate Validator 6.0.20.Final
+2024-12-29 08:43:06,391 INFO  [org.hibernate.orm.connections.access] (default task-1) HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1fb156eb] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-29 08:43:06,459 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (default task-1) HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2024-12-29 08:43:06,698 INFO  [stdout] (default task-1) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.r as r3_0_, requestdat0_.x as x4_0_, requestdat0_.y as y5_0_ from Requests requestdat0_
+2024-12-29 08:43:06,735 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 08:43:22,241 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 08:43:22,241 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 08:43:22,241 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 08:52:45,233 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 84) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\99\e1db725654fd9e8c206c4eca330c0c5bf4dd89 is obsolete and will be removed
+2024-12-29 08:52:45,249 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 84) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\99\e1db725654fd9e8c206c4eca330c0c5bf4dd89\content
+2024-12-29 08:52:45,249 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 84) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\0a\e3dbb016b07bb172f25abf00091c7311fe8ca3 is obsolete and will be removed
+2024-12-29 08:52:45,257 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 84) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\0a\e3dbb016b07bb172f25abf00091c7311fe8ca3\content
+2024-12-29 08:55:34,604 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 08:55:34,606 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 08:55:34,607 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 08:55:34,614 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = Backend-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 08:55:34,618 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 08:55:34,630 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-29 08:55:34,636 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 08:55:34,638 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2024-12-29 08:55:34,638 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 08:55:34,647 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 88) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 08:55:34,649 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-3) Stopping cache manager null on null
+2024-12-29 08:55:34,661 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 08:55:34,661 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 08:55:34,661 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 08:55:34,662 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 08:55:34,663 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 08:55:34,694 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment Backend-1.0-SNAPSHOT.war (runtime-name: Backend-1.0-SNAPSHOT.war) in 86ms
+2024-12-29 08:55:34,698 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 90ms
+2024-12-29 09:04:30,504 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 09:04:30,531 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 09:04:30,532 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 09:04:30,617 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 09:04:30,651 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 09:04:30,740 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 09:04:32,503 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2024-12-29 09:04:32,503 WARN  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0013: Deployment Server-1.0-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2024-12-29 09:04:32,604 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 09:04:32,824 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-8) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 09:04:32,839 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 09:04:33,019 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 09:04:33,100 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-29 09:04:33,147 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 09:04:33,189 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 09:04:33,193 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 5571ms - Started 433 of 662 services (375 services are lazy, passive or on-demand)
+2024-12-29 09:04:33,195 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 09:04:33,195 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 09:04:50,262 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 09:04:50,263 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 09:04:50,315 INFO  [org.hibernate.Version] (default task-1) HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-12-29 09:04:50,593 WARN  [org.hibernate.orm.deprecation] (default task-1) HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-12-29 09:04:50,936 INFO  [org.hibernate.annotations.common.Version] (default task-1) HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-29 09:04:51,064 WARN  [org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator] (default task-1) HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-12-29 09:04:51,067 WARN  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-12-29 09:04:51,068 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/postgres]
+2024-12-29 09:04:51,069 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-29 09:04:51,069 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001003: Autocommit mode: false
+2024-12-29 09:04:51,071 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-1) HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-12-29 09:04:51,314 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-29 09:04:51,380 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2024-12-29 09:04:51,743 INFO  [org.hibernate.validator.internal.util.Version] (default task-1) HV000001: Hibernate Validator 6.0.20.Final
+2024-12-29 09:04:52,816 INFO  [org.hibernate.orm.connections.access] (default task-1) HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1edb8de7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-29 09:04:52,876 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (default task-1) HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2024-12-29 09:04:53,093 INFO  [stdout] (default task-1) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.r as r3_0_, requestdat0_.x as x4_0_, requestdat0_.y as y5_0_ from Requests requestdat0_
+2024-12-29 09:04:53,138 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 09:05:02,775 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 09:05:02,776 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 09:05:02,776 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 09:05:02,791 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 09:05:47,925 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 09:05:47,926 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 09:05:47,928 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 09:05:47,940 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 09:05:47,953 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 09:05:47,973 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-29 09:05:47,983 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2024-12-29 09:05:47,984 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 09:05:47,990 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 09:05:48,003 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 88) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 09:05:48,012 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-2) Stopping cache manager null on null
+2024-12-29 09:05:48,046 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 09:05:48,046 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 09:05:48,047 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 09:05:48,048 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 09:05:48,051 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 09:05:48,101 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 161ms
+2024-12-29 09:05:48,112 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 178ms
+2024-12-29 23:35:14,194 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-29 23:35:14,226 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-29 23:35:14,226 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 23:35:14,319 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-29 23:35:14,339 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 23:35:14,408 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-29 23:35:16,409 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2024-12-29 23:35:16,410 WARN  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0013: Deployment Server-1.0-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2024-12-29 23:35:16,521 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 23:35:16,723 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-6) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-29 23:35:16,738 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-29 23:35:16,917 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-29 23:35:17,003 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 81) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-29 23:35:17,066 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-29 23:35:17,117 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-29 23:35:17,120 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 6394ms - Started 433 of 662 services (375 services are lazy, passive or on-demand)
+2024-12-29 23:35:17,121 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-29 23:35:17,121 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-29 23:35:31,233 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-29 23:35:31,235 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-29 23:35:31,289 INFO  [org.hibernate.Version] (default task-1) HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-12-29 23:35:31,609 WARN  [org.hibernate.orm.deprecation] (default task-1) HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-12-29 23:35:31,960 INFO  [org.hibernate.annotations.common.Version] (default task-1) HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-29 23:35:32,098 WARN  [org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator] (default task-1) HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-12-29 23:35:32,101 WARN  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-12-29 23:35:32,102 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/postgres]
+2024-12-29 23:35:32,103 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-29 23:35:32,103 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001003: Autocommit mode: false
+2024-12-29 23:35:32,107 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-1) HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-12-29 23:35:32,432 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-29 23:35:32,483 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2024-12-29 23:35:32,795 INFO  [org.hibernate.validator.internal.util.Version] (default task-1) HV000001: Hibernate Validator 6.0.20.Final
+2024-12-29 23:35:33,688 INFO  [org.hibernate.orm.connections.access] (default task-1) HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@70f78935] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-29 23:35:33,740 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (default task-1) HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2024-12-29 23:35:33,962 INFO  [stdout] (default task-1) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.r as r3_0_, requestdat0_.x as x4_0_, requestdat0_.y as y5_0_ from Requests requestdat0_
+2024-12-29 23:35:34,000 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 23:35:34,009 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-29 23:45:11,921 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 85) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\31\6a1beeb13f4a3cb6479a8bfcf343f3263f8c35 is obsolete and will be removed
+2024-12-29 23:45:11,927 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 85) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\31\6a1beeb13f4a3cb6479a8bfcf343f3263f8c35\content
+2024-12-29 23:51:57,876 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-29 23:51:57,877 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-29 23:51:57,878 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-29 23:51:57,882 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-29 23:51:57,887 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-29 23:51:57,892 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-29 23:51:57,896 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-29 23:51:57,898 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2024-12-29 23:51:57,898 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-29 23:51:57,902 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 86) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-29 23:51:57,903 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-1) Stopping cache manager null on null
+2024-12-29 23:51:57,917 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-29 23:51:57,917 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-29 23:51:57,918 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-29 23:51:57,918 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-29 23:51:57,918 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-29 23:51:57,945 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 61ms
+2024-12-29 23:51:57,949 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 69ms

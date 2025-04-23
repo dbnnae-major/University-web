@@ -1,0 +1,374 @@
+2024-12-30 07:27:08,363 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-30 07:27:08,471 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-30 07:27:08,721 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-30 07:27:08,989 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-30 07:27:09,300 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-30 07:27:09,624 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-30 07:27:14,500 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2024-12-30 07:27:14,502 WARN  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0013: Deployment Server-1.0-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2024-12-30 07:27:14,779 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-30 07:27:15,444 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-6) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-30 07:27:15,497 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-30 07:27:16,016 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-30 07:27:16,255 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-30 07:27:16,457 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-30 07:27:16,656 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-30 07:27:16,669 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 13162ms - Started 433 of 662 services (375 services are lazy, passive or on-demand)
+2024-12-30 07:27:16,675 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-30 07:27:16,675 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-30 07:27:28,727 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 07:27:28,727 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 07:27:28,782 INFO  [org.hibernate.Version] (default task-1) HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-12-30 07:27:28,964 WARN  [org.hibernate.orm.deprecation] (default task-1) HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-12-30 07:27:29,177 INFO  [org.hibernate.annotations.common.Version] (default task-1) HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-30 07:27:29,236 WARN  [org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator] (default task-1) HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-12-30 07:27:29,239 WARN  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-12-30 07:27:29,239 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/postgres]
+2024-12-30 07:27:29,239 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-30 07:27:29,240 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001003: Autocommit mode: false
+2024-12-30 07:27:29,242 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-1) HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-12-30 07:27:29,395 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-30 07:27:29,429 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2024-12-30 07:27:29,648 INFO  [org.hibernate.validator.internal.util.Version] (default task-1) HV000001: Hibernate Validator 6.0.20.Final
+2024-12-30 07:27:30,052 INFO  [org.hibernate.orm.connections.access] (default task-1) HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2a41e6e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 07:27:30,105 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (default task-1) HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2024-12-30 07:27:30,199 INFO  [stdout] (default task-1) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.r as r3_0_, requestdat0_.x as x4_0_, requestdat0_.y as y5_0_ from Requests requestdat0_
+2024-12-30 07:27:30,235 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:27:30,248 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:27:48,377 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 07:27:48,378 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for registration
+2024-12-30 07:27:48,388 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:27:48,462 INFO  [stdout] (default task-1) Hibernate: insert into Users (login, password) values (?, ?)
+2024-12-30 07:29:28,022 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 07:29:28,022 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 07:29:28,022 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:29:28,024 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:29:58,949 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-30 07:29:58,950 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-30 07:29:58,951 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-30 07:29:58,962 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-30 07:29:58,967 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-30 07:29:58,975 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-30 07:29:58,981 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2024-12-30 07:29:58,981 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-30 07:29:58,982 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-30 07:29:58,995 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 87) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-30 07:29:58,996 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-8) Stopping cache manager null on null
+2024-12-30 07:29:59,013 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-30 07:29:59,013 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-30 07:29:59,013 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-30 07:29:59,013 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-30 07:29:59,014 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-30 07:29:59,040 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 83ms
+2024-12-30 07:29:59,045 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 91ms
+2024-12-30 07:40:39,857 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-30 07:40:39,886 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-30 07:40:39,972 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-30 07:40:40,217 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-30 07:40:40,329 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-30 07:40:40,632 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-30 07:40:43,925 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2024-12-30 07:40:43,926 WARN  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0013: Deployment Server-1.0-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2024-12-30 07:40:44,090 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-30 07:40:44,317 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-5) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-30 07:40:44,354 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-30 07:40:44,556 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-30 07:40:44,669 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-30 07:40:44,767 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-30 07:40:44,844 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-30 07:40:44,851 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 9725ms - Started 433 of 662 services (375 services are lazy, passive or on-demand)
+2024-12-30 07:40:44,853 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-30 07:40:44,853 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-30 07:40:49,510 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 07:40:49,511 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 07:40:49,554 INFO  [org.hibernate.Version] (default task-1) HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-12-30 07:40:49,692 WARN  [org.hibernate.orm.deprecation] (default task-1) HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-12-30 07:40:49,845 INFO  [org.hibernate.annotations.common.Version] (default task-1) HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-30 07:40:49,908 WARN  [org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator] (default task-1) HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-12-30 07:40:49,908 WARN  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-12-30 07:40:49,909 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/postgres]
+2024-12-30 07:40:49,909 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-30 07:40:49,909 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001003: Autocommit mode: false
+2024-12-30 07:40:49,912 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-1) HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-12-30 07:40:50,039 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-30 07:40:50,067 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2024-12-30 07:40:50,225 INFO  [org.hibernate.validator.internal.util.Version] (default task-1) HV000001: Hibernate Validator 6.0.20.Final
+2024-12-30 07:40:50,577 INFO  [org.hibernate.orm.connections.access] (default task-1) HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3fd86f24] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 07:40:50,608 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (default task-1) HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2024-12-30 07:40:50,707 INFO  [stdout] (default task-1) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.r as r3_0_, requestdat0_.x as x4_0_, requestdat0_.y as y5_0_ from Requests requestdat0_
+2024-12-30 07:40:50,734 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:40:50,739 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:41:20,555 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 07:41:20,556 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 07:41:20,556 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:41:20,557 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:43:08,755 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 07:43:08,756 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 07:43:08,756 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:43:08,758 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:53:09,539 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 07:53:09,539 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 07:53:09,540 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:53:09,542 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:53:52,186 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 07:53:52,186 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 07:53:52,186 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:53:57,512 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 07:53:57,512 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 07:53:57,513 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:53:57,516 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:54:22,403 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 07:54:22,403 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 07:54:22,404 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:54:22,405 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:55:35,594 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 07:55:35,594 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for registration
+2024-12-30 07:55:35,602 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:55:35,689 INFO  [stdout] (default task-1) Hibernate: insert into Users (login, password) values (?, ?)
+2024-12-30 07:55:41,440 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 07:55:41,442 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 07:55:41,442 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 07:55:41,444 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:03:08,031 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:03:08,032 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:03:08,032 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:03:08,034 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:03:55,829 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:03:55,829 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:03:55,829 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:03:55,830 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:04:24,274 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:04:24,274 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:04:24,274 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:04:24,276 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:07:03,501 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:07:03,501 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:07:03,501 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:07:03,502 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:15:55,714 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:15:55,714 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:15:55,715 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:15:55,717 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:18:20,638 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:18:20,638 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:18:20,638 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:18:20,640 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:23:30,023 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:23:30,023 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:23:30,024 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:23:30,026 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:28:31,176 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:28:31,177 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:28:31,177 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:28:31,178 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:29:54,161 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:29:54,161 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:29:54,161 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:29:54,162 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:37:43,914 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:37:43,915 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:37:43,915 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:37:43,917 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:38:41,516 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:38:41,516 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:38:41,517 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:38:41,518 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:38:49,616 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:38:49,617 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:38:49,617 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:38:49,619 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:39:46,435 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 08:39:46,435 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 08:39:46,436 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:39:46,437 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 08:46:44,031 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-30 08:46:44,037 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-30 08:46:44,038 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-30 08:46:44,055 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-30 08:46:44,066 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-30 08:46:44,076 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 87) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-30 08:46:44,093 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-30 08:46:44,102 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-30 08:46:44,102 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0019: Host default-host stopping
+2024-12-30 08:46:44,131 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 86) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-30 08:46:44,134 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-2) Stopping cache manager null on null
+2024-12-30 08:46:44,163 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-30 08:46:44,164 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-30 08:46:44,163 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-30 08:46:44,164 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-30 08:46:44,166 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-30 08:46:44,242 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 194ms
+2024-12-30 08:46:44,253 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 210ms
+2024-12-30 09:57:53,224 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-30 09:57:53,253 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-30 09:57:53,279 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-30 09:57:53,353 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-30 09:57:53,379 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-30 09:57:53,452 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-30 09:57:55,507 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2024-12-30 09:57:55,507 WARN  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0013: Deployment Server-1.0-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2024-12-30 09:57:55,631 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-30 09:57:55,852 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-7) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-30 09:57:55,868 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-30 09:57:56,028 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-30 09:57:56,097 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-30 09:57:56,147 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-30 09:57:56,185 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-30 09:57:56,188 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 6116ms - Started 433 of 662 services (375 services are lazy, passive or on-demand)
+2024-12-30 09:57:56,190 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-30 09:57:56,190 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-30 09:59:23,472 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2024-12-30 09:59:23,474 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for registration
+2024-12-30 09:59:23,637 INFO  [org.hibernate.Version] (default task-2) HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-12-30 09:59:24,031 WARN  [org.hibernate.orm.deprecation] (default task-2) HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-12-30 09:59:24,500 INFO  [org.hibernate.annotations.common.Version] (default task-2) HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-30 09:59:24,650 WARN  [org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator] (default task-2) HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-12-30 09:59:24,653 WARN  [org.hibernate.orm.connections.pooling] (default task-2) HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-12-30 09:59:24,654 INFO  [org.hibernate.orm.connections.pooling] (default task-2) HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/postgres]
+2024-12-30 09:59:24,655 INFO  [org.hibernate.orm.connections.pooling] (default task-2) HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-30 09:59:24,655 INFO  [org.hibernate.orm.connections.pooling] (default task-2) HHH10001003: Autocommit mode: false
+2024-12-30 09:59:24,659 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-2) HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-12-30 09:59:24,918 INFO  [org.hibernate.dialect.Dialect] (default task-2) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-30 09:59:24,971 INFO  [org.hibernate.orm.beans] (default task-2) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2024-12-30 09:59:25,131 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 09:59:25,133 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for registration
+2024-12-30 09:59:25,293 INFO  [org.hibernate.validator.internal.util.Version] (default task-2) HV000001: Hibernate Validator 6.0.20.Final
+2024-12-30 09:59:26,198 INFO  [org.hibernate.orm.connections.access] (default task-2) HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4d7b83f0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 09:59:26,224 INFO  [org.example.servlets.ControllerServlet] (default task-3) Received POST request for /controller
+2024-12-30 09:59:26,225 INFO  [org.example.servlets.ControllerServlet] (default task-3) Redirecting to UserManagerServlet for registration
+2024-12-30 09:59:26,255 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (default task-2) HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2024-12-30 09:59:26,505 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.r as r3_0_, requestdat0_.x as x4_0_, requestdat0_.y as y5_0_ from Requests requestdat0_
+2024-12-30 09:59:26,557 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 09:59:26,558 INFO  [stdout] (default task-2) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 09:59:26,558 INFO  [stdout] (default task-3) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 09:59:45,326 INFO  [org.example.servlets.ControllerServlet] (default task-3) Received POST request for /controller
+2024-12-30 09:59:45,326 INFO  [org.example.servlets.ControllerServlet] (default task-3) Redirecting to UserManagerServlet for authorization
+2024-12-30 09:59:45,327 INFO  [stdout] (default task-3) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 09:59:45,329 INFO  [stdout] (default task-3) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 10:42:17,791 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2024-12-30 10:42:17,793 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-30 10:42:17,794 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-12-30 10:42:17,803 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-30 10:42:17,807 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2024-12-30 10:42:17,813 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2024-12-30 10:42:17,816 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2024-12-30 10:42:17,817 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+2024-12-30 10:42:17,818 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2024-12-30 10:42:17,824 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 83) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2024-12-30 10:42:17,826 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-1) Stopping cache manager null on null
+2024-12-30 10:42:17,840 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
+2024-12-30 10:42:17,841 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2024-12-30 10:42:17,841 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+2024-12-30 10:42:17,842 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2024-12-30 10:42:17,843 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 2.1.3.Final stopping
+2024-12-30 10:42:17,885 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 83ms
+2024-12-30 10:42:17,892 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 94ms
+2024-12-30 13:52:54,615 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2024-12-30 13:52:54,627 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0493: EJB subsystem suspension complete
+2024-12-30 13:52:54,652 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2024-12-30 13:52:54,739 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2024-12-30 13:52:54,752 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2024-12-30 13:52:54,835 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2024-12-30 13:52:56,797 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2024-12-30 13:52:56,798 WARN  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0013: Deployment Server-1.0-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2024-12-30 13:52:56,931 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2024-12-30 13:52:57,211 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-4) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2024-12-30 13:52:57,225 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2024-12-30 13:52:57,409 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2024-12-30 13:52:57,489 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2024-12-30 13:52:57,541 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2024-12-30 13:52:57,582 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2024-12-30 13:52:57,585 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 6323ms - Started 433 of 662 services (375 services are lazy, passive or on-demand)
+2024-12-30 13:52:57,586 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2024-12-30 13:52:57,587 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2024-12-30 13:53:04,172 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 13:53:04,173 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 13:53:04,220 INFO  [org.hibernate.Version] (default task-1) HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-12-30 13:53:04,390 WARN  [org.hibernate.orm.deprecation] (default task-1) HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2024-12-30 13:53:04,583 INFO  [org.hibernate.annotations.common.Version] (default task-1) HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-30 13:53:04,643 WARN  [org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator] (default task-1) HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2024-12-30 13:53:04,645 WARN  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-12-30 13:53:04,645 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/postgres]
+2024-12-30 13:53:04,646 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-30 13:53:04,646 INFO  [org.hibernate.orm.connections.pooling] (default task-1) HHH10001003: Autocommit mode: false
+2024-12-30 13:53:04,648 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-1) HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-12-30 13:53:04,810 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-30 13:53:04,850 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2024-12-30 13:53:05,054 INFO  [org.hibernate.validator.internal.util.Version] (default task-1) HV000001: Hibernate Validator 6.0.20.Final
+2024-12-30 13:53:05,541 INFO  [org.hibernate.orm.connections.access] (default task-1) HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@24bd58ef] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 13:53:05,585 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (default task-1) HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2024-12-30 13:53:05,730 INFO  [stdout] (default task-1) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.r as r3_0_, requestdat0_.x as x4_0_, requestdat0_.y as y5_0_ from Requests requestdat0_
+2024-12-30 13:53:05,755 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 13:53:05,763 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 13:58:05,327 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 13:58:05,328 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 13:58:05,328 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 13:58:05,330 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 13:58:41,041 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 13:58:41,041 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 13:58:41,041 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 13:58:41,042 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:01:23,067 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:01:23,067 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:01:23,068 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:01:23,069 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:02:48,223 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:02:48,223 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:02:48,224 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:02:48,225 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:08:00,714 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:08:00,714 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:08:00,715 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:08:00,717 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:08:36,958 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:08:36,958 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:08:36,958 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:08:36,959 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:09:25,358 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:09:25,358 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:09:25,359 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:09:25,360 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:10:13,569 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:10:13,570 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:10:13,570 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:10:13,571 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:11:03,987 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:11:03,987 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:11:03,987 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:11:03,988 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:14:18,528 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:14:18,528 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:14:18,529 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:14:18,530 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:14:19,787 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:14:19,787 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:14:19,787 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:14:19,788 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:14:45,093 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:14:45,093 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:14:45,094 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:14:45,094 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:17:02,543 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:17:02,543 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:17:02,543 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:17:02,545 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:25:36,177 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:25:36,177 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:25:36,178 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:25:36,179 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:27:22,717 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:27:22,717 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:27:22,718 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:27:22,718 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:31:57,747 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:31:57,747 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:31:57,748 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:31:57,749 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:38:51,262 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:38:51,262 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:38:51,263 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:38:51,264 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:40:05,621 INFO  [org.example.servlets.ControllerServlet] (default task-1) Received POST request for /controller
+2024-12-30 14:40:05,621 INFO  [org.example.servlets.ControllerServlet] (default task-1) Redirecting to UserManagerServlet for authorization
+2024-12-30 14:40:05,621 INFO  [stdout] (default task-1) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2024-12-30 14:40:05,622 INFO  [stdout] (default task-1) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?

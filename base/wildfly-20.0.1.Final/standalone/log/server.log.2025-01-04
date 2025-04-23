@@ -1,0 +1,822 @@
+2025-01-04 08:40:33,933 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\deployments
+2025-01-04 08:40:33,946 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "Server-1.0-SNAPSHOT.war" (runtime-name: "Server-1.0-SNAPSHOT.war")
+2025-01-04 08:40:33,986 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-01-04 08:40:34,002 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:25666
+2025-01-04 08:40:34,096 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6) 
+2025-01-04 08:40:36,125 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-01-04 08:40:36,126 WARN  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0013: Deployment Server-1.0-SNAPSHOT.war contains CDI annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2025-01-04 08:40:36,203 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2025-01-04 08:40:36,462 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-2) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2025-01-04 08:40:36,476 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+2025-01-04 08:40:36,669 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2025-01-04 08:40:36,757 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2025-01-04 08:40:36,814 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Server-1.0-SNAPSHOT.war" (runtime-name : "Server-1.0-SNAPSHOT.war")
+2025-01-04 08:40:36,863 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-01-04 08:40:36,866 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 6243ms - Started 433 of 662 services (375 services are lazy, passive or on-demand)
+2025-01-04 08:40:36,868 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:25667/management
+2025-01-04 08:40:36,868 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:25667
+2025-01-04 08:40:46,093 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 08:40:46,095 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for authorization
+2025-01-04 08:40:46,156 INFO  [org.hibernate.Version] (default task-2) HHH000412: Hibernate ORM core version 5.6.14.Final
+2025-01-04 08:40:46,393 WARN  [org.hibernate.orm.deprecation] (default task-2) HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-01-04 08:40:46,656 INFO  [org.hibernate.annotations.common.Version] (default task-2) HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-04 08:40:46,776 WARN  [org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator] (default task-2) HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+2025-01-04 08:40:46,780 WARN  [org.hibernate.orm.connections.pooling] (default task-2) HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2025-01-04 08:40:46,780 INFO  [org.hibernate.orm.connections.pooling] (default task-2) HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/postgres]
+2025-01-04 08:40:46,780 INFO  [org.hibernate.orm.connections.pooling] (default task-2) HHH10001001: Connection properties: {password=****, user=postgres}
+2025-01-04 08:40:46,780 INFO  [org.hibernate.orm.connections.pooling] (default task-2) HHH10001003: Autocommit mode: false
+2025-01-04 08:40:46,784 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-2) HHH000115: Hibernate connection pool size: 20 (min=1)
+2025-01-04 08:40:47,031 INFO  [org.hibernate.dialect.Dialect] (default task-2) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-01-04 08:40:47,087 INFO  [org.hibernate.orm.beans] (default task-2) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2025-01-04 08:40:47,358 INFO  [org.hibernate.validator.internal.util.Version] (default task-2) HV000001: Hibernate Validator 6.0.20.Final
+2025-01-04 08:40:47,688 INFO  [org.hibernate.orm.connections.access] (default task-2) HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@13557291] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-01-04 08:40:47,735 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (default task-2) HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+2025-01-04 08:40:47,841 INFO  [stdout] (default task-2) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2025-01-04 08:40:47,848 INFO  [stdout] (default task-2) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2025-01-04 08:42:01,929 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 08:42:01,929 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for authorization
+2025-01-04 08:42:01,929 INFO  [stdout] (default task-2) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2025-01-04 08:42:01,930 INFO  [stdout] (default task-2) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2025-01-04 08:42:21,201 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 08:42:21,201 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 08:42:21,204 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 08:49:02,958 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 08:49:02,958 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 08:49:02,959 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 08:50:31,737 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 85) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\52\20cb67ce26826f5c63fb475807f0775f86bd7a is obsolete and will be removed
+2025-01-04 08:50:31,753 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 85) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\52\20cb67ce26826f5c63fb475807f0775f86bd7a\content
+2025-01-04 08:50:31,753 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 85) WFLYDR0009: Content C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\0f\3a621bcf7ea8e9e8528690c52f71d3ea0fb86e is obsolete and will be removed
+2025-01-04 08:50:31,756 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 85) WFLYDR0002: Content removed from location C:\Users\Artem\Desktop\Учеба\2 Курс\Веб\wildfly-20.0.1.Final\standalone\data\content\0f\3a621bcf7ea8e9e8528690c52f71d3ea0fb86e\content
+2025-01-04 08:51:02,448 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 08:51:02,448 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 08:51:02,449 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:01:23,503 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:01:23,503 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:01:23,503 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:20:35,226 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:20:35,226 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:20:35,227 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:24:06,927 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:24:06,927 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for authorization
+2025-01-04 09:24:06,927 INFO  [stdout] (default task-2) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2025-01-04 09:24:06,928 INFO  [stdout] (default task-2) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2025-01-04 09:24:22,892 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:24:22,893 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:24:22,893 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:24:31,592 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:24:31,593 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:24:31,593 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:24:36,988 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:24:36,988 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for authorization
+2025-01-04 09:24:36,988 INFO  [stdout] (default task-2) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2025-01-04 09:24:36,990 INFO  [stdout] (default task-2) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2025-01-04 09:24:43,314 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:24:43,314 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:24:43,333 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 09:24:45,857 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:24:45,857 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:24:45,857 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:24:56,116 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:24:56,117 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:24:56,117 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:24:58,305 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:24:58,306 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:24:58,306 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:28:07,486 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:28:07,486 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for authorization
+2025-01-04 09:28:07,487 INFO  [stdout] (default task-2) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2025-01-04 09:28:07,488 INFO  [stdout] (default task-2) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2025-01-04 09:28:08,656 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:28:08,656 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:28:08,656 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:32:02,760 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:32:02,761 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:32:02,761 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:32:03,995 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:32:03,995 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:32:07,767 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:32:07,767 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:32:09,651 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:32:09,651 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:32:09,651 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:32:10,733 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:32:10,733 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:32:11,744 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:32:11,744 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:32:11,744 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:33:33,396 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:33:33,396 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:33:33,396 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 09:33:50,577 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:33:50,578 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:41:23,041 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 09:41:23,042 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 09:41:23,043 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:04:14,284 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:04:14,285 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:04:14,288 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:09:21,578 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:09:21,578 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:09:21,579 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:09:24,335 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:09:24,335 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:09:24,336 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:09:26,744 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:09:26,745 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:09:26,745 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:11:21,663 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:11:21,663 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:11:21,664 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:11:25,929 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:11:25,929 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:11:25,930 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:11:26,438 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:11:26,438 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:11:26,439 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:11:26,585 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:11:26,586 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:11:26,586 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:11:26,734 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:11:26,734 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:11:26,735 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:11:26,886 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:11:26,887 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:11:26,887 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:11:27,035 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:11:27,035 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:11:27,036 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:11:35,338 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:11:35,338 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:11:35,338 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:12:17,546 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:12:17,546 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:12:17,547 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:12:18,366 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:12:18,367 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:12:18,367 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:12:18,541 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:12:18,541 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:12:18,542 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:12:21,803 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:12:21,804 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:12:21,804 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:12:27,025 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:12:27,025 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:12:27,025 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:12:27,989 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:27,989 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:27,997 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:28,200 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:28,200 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:28,201 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:28,349 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:28,350 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:28,350 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:28,512 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:28,512 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:28,512 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:28,658 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:28,659 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:28,659 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:28,815 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:28,815 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:28,816 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:28,974 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:28,974 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:28,974 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:29,123 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:29,123 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:29,123 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:29,274 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:29,275 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:29,275 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:29,433 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:29,433 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:29,434 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:29,595 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:29,595 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:29,595 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:29,750 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:29,750 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:29,750 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:29,909 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:29,910 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:29,910 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:30,057 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:30,057 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:30,057 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:30,208 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:30,208 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:30,208 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:30,364 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:30,364 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:30,365 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:30,511 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:30,511 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:30,511 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:30,655 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:30,656 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:30,656 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:30,800 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:12:30,800 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:12:30,800 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:12:32,834 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:12:32,834 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:12:34,578 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:12:34,578 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:12:34,580 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:12:36,314 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:12:36,314 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:12:36,314 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:12:41,658 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:12:41,658 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:12:41,658 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:12:44,464 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:12:44,464 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:12:44,464 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:16:00,387 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:16:04,856 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:16:04,856 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:16:04,857 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:16:05,460 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:17:16,625 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:17:59,741 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:17:59,741 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:17:59,741 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:20:07,579 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:20:07,579 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:20:07,580 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:23:37,009 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:23:37,009 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:23:37,010 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:24:35,253 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:24:35,253 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:24:35,253 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:24:41,309 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:24:41,310 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:24:41,310 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:24:52,508 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:24:52,508 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:24:52,510 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:25:01,317 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:25:01,317 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:25:01,317 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:25:05,451 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:25:05,451 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:25:05,452 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:27:47,827 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:27:47,827 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:27:47,828 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:27:49,088 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:27:49,089 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:27:49,089 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:27:58,586 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:27:58,586 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:27:58,586 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:28:00,730 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:28:00,730 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:28:00,731 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:28:02,572 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:28:02,572 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:28:02,573 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:28:05,937 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:28:05,937 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:28:05,937 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:28:08,937 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:28:08,937 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:28:08,937 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:28:09,915 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:28:09,916 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:28:09,916 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:28:34,395 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:28:34,395 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:28:34,395 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:28:35,505 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:28:35,505 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:28:35,505 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:28:36,666 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:28:36,666 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:28:36,667 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:30:39,507 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:30:39,507 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:30:39,507 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:32:18,210 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:32:18,210 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:32:18,212 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:32:58,995 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:32:58,995 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:32:58,995 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:33:33,159 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:33:33,159 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:33:33,160 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:33:42,208 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:33:42,208 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:33:42,208 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:34:37,221 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:34:37,221 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:34:37,221 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:35:57,312 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:35:57,313 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:35:57,313 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:37:17,954 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:37:17,955 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:37:17,955 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:37:36,390 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:37:36,390 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:37:36,391 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:38:00,796 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:38:00,796 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:38:00,796 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:38:42,232 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:38:42,233 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:38:42,233 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:39:29,853 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:39:29,853 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:39:29,854 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:42:00,702 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:42:00,702 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:42:00,703 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:42:32,267 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:42:32,267 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:42:32,268 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:42:56,404 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:42:56,405 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:42:56,405 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:43:20,618 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:43:20,618 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:43:20,618 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:43:43,646 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:43:43,646 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:43:43,647 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:45:30,202 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:45:30,202 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:45:30,203 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:45:53,763 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:45:53,763 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:45:53,764 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:46:15,259 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:46:15,259 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:46:15,259 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:46:35,105 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:46:35,105 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:46:35,105 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:50:16,824 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:50:16,824 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:50:16,825 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:50:35,193 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:50:35,193 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:50:35,193 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:50:43,447 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:50:43,447 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:50:43,447 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:51:14,903 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:51:14,903 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:51:14,903 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:51:53,440 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:51:53,440 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:51:53,440 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:51:54,210 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:51:54,210 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:51:54,211 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:54:41,677 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:54:41,677 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:54:41,678 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:55:16,985 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:55:16,985 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:55:16,985 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:55:18,938 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:55:18,938 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:55:18,942 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:55:20,084 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:55:20,084 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:55:20,086 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:55:24,978 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:55:24,978 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:55:24,979 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:55:48,350 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:55:48,351 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:55:48,351 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:56:47,910 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:56:47,911 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:56:47,911 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:56:54,426 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:56:54,426 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:56:54,427 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:56:55,879 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:56:55,879 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:56:55,879 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:56:57,311 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:56:57,311 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:56:57,312 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:56:59,280 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:56:59,280 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:56:59,280 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:57:00,622 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:57:00,622 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:57:00,623 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:57:01,281 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:57:01,281 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:57:01,282 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:57:03,418 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:57:03,418 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:57:03,419 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:57:04,436 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:57:04,436 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:57:04,437 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:57:07,500 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:57:07,500 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:57:07,501 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:57:08,222 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:08,222 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:08,222 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:08,366 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:08,366 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:08,367 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:08,510 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:08,510 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:08,510 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:08,660 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:08,660 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:08,661 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:08,808 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:08,808 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:08,809 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:08,928 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:08,928 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:08,929 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:09,064 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:09,064 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:09,064 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:09,202 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:09,202 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:09,203 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:09,345 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:09,345 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:09,346 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:09,495 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:09,495 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:09,495 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:09,631 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:09,631 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:09,631 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:09,763 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:09,763 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:09,763 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:09,910 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:09,910 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:09,910 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:10,059 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:10,059 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:10,059 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:10,221 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:10,221 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:10,221 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:10,358 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:10,358 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:10,359 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:10,494 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 10:57:10,494 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 10:57:10,495 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 10:57:11,208 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:57:11,208 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:57:11,209 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:57:12,168 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:57:12,168 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:57:12,169 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:57:13,920 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:57:13,920 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:57:13,920 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:58:31,019 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:58:31,019 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:58:31,019 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:58:33,139 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:58:33,139 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:58:33,140 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:58:34,074 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:58:34,074 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:58:34,074 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:58:34,792 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:58:34,792 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:58:34,792 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:58:38,706 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:58:38,706 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:58:38,707 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:59:14,661 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:14,661 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:14,661 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:59:20,582 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:20,583 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:20,583 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:59:21,151 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:21,152 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:21,152 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:59:21,641 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:21,642 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:21,642 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:59:22,000 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:22,000 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:22,000 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:59:25,024 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:25,024 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:25,024 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:59:25,420 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:25,420 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:25,420 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:59:25,837 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:25,837 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:25,837 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:59:26,351 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:26,352 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:26,352 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 10:59:33,559 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:33,559 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:33,559 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:59:36,042 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:36,042 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:36,042 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:59:41,519 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:41,519 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:41,519 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 10:59:42,130 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 10:59:42,130 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 10:59:42,130 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:14,287 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:14,287 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for authorization
+2025-01-04 11:02:14,288 INFO  [stdout] (default task-2) Hibernate: select count(userdata0_.id) as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2025-01-04 11:02:14,289 INFO  [stdout] (default task-2) Hibernate: select userdata0_.password as col_0_0_ from Users userdata0_ where userdata0_.login=?
+2025-01-04 11:02:14,478 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:14,478 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:14,478 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:17,500 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:17,500 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:17,501 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:18,058 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:18,058 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:18,058 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:22,797 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:22,797 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:22,797 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:29,034 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:29,035 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:29,035 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:02:30,643 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:30,643 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:30,644 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:02:30,835 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:30,835 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:30,836 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:32,911 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:32,912 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:32,912 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:45,152 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:45,152 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:45,152 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:47,741 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:47,741 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:47,741 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:47,871 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:47,871 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:47,871 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:48,002 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:48,003 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:48,003 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:48,132 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:48,132 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:48,132 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:48,262 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:48,262 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:48,263 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:48,401 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:48,401 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:48,402 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:48,535 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:48,535 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:48,535 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:48,677 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:48,677 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:48,677 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:48,817 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:48,817 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:48,818 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:49,059 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:49,059 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:49,059 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:49,172 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:49,172 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:49,173 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:49,312 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:49,312 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:49,312 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:49,452 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:02:49,452 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:02:49,452 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:02:50,768 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:50,769 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:50,769 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:52,889 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:52,889 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:52,889 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:53,650 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:53,650 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:53,651 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:55,533 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:55,533 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:55,533 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:56,447 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:56,447 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:56,447 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:02:58,316 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:58,316 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:58,316 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:02:58,445 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:58,446 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:58,446 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:02:58,595 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:58,595 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:58,595 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:02:58,774 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:58,774 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:58,774 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:02:58,993 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:58,994 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:58,994 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:02:59,025 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:59,025 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:59,026 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:02:59,282 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:59,282 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:59,283 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:02:59,322 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:59,322 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:59,323 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:02:59,644 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:59,644 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:59,644 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:02:59,671 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:59,671 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:59,671 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:02:59,715 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:02:59,715 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:02:59,716 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:00,076 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:00,076 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:00,077 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:00,114 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:00,114 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:00,115 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:00,156 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:00,156 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:00,157 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:00,612 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:00,612 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:00,613 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:00,647 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:00,647 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:00,648 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:00,690 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:00,691 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:00,691 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:00,736 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:00,736 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:00,737 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:00,776 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:00,776 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:00,777 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:01,334 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:01,335 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:01,335 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:01,373 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:01,373 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:01,374 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:01,415 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:01,415 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:01,416 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:01,463 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:01,463 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:01,463 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:01,501 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:01,501 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:01,502 INFO  [stdout] (default task-2) Hibernate: insert into Requests (flag, owner, r, x, y) values (?, ?, ?, ?, ?)
+2025-01-04 11:03:21,256 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:21,257 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:21,257 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:03:23,148 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:23,148 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:23,149 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:03:42,270 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:42,270 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:42,270 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:03:43,179 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:43,179 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:43,180 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:43,349 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:43,349 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:43,350 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:43,477 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:43,477 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:43,478 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:43,612 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:43,613 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:43,613 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:43,739 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:43,739 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:43,739 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:43,866 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:43,866 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:43,867 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:44,000 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:44,000 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:44,000 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:44,144 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:44,144 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:44,144 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:44,282 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:44,282 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:44,282 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:44,428 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:44,428 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:44,429 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:44,573 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:44,573 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:44,574 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:44,728 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:44,728 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:44,728 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:44,885 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:44,885 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:44,886 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:45,047 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:45,047 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:45,047 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:45,196 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:45,196 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:45,196 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:45,353 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:45,353 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:45,353 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:45,474 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:45,475 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:45,475 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:45,615 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:45,615 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:45,615 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:45,764 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:45,764 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:45,764 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:45,911 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:45,911 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:45,912 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:46,050 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:46,050 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:46,050 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:46,200 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:46,201 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:46,201 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:46,363 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:46,363 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:46,363 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:46,511 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:46,511 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:46,511 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:46,671 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:46,671 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:46,671 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:46,822 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:46,822 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:46,822 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:46,983 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received DELETE request for /controller
+2025-01-04 11:03:46,983 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting DELETE request to /Check
+2025-01-04 11:03:46,983 INFO  [stdout] (default task-2) Hibernate: delete from Requests where id=? and owner=?
+2025-01-04 11:03:48,418 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:48,418 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:48,419 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:03:49,094 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:49,094 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:49,094 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:03:49,892 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:49,893 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:49,893 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:03:52,914 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:52,914 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:52,914 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:03:53,687 INFO  [org.example.servlets.ControllerServlet] (default task-2) Received POST request for /controller
+2025-01-04 11:03:53,687 INFO  [org.example.servlets.ControllerServlet] (default task-2) Redirecting to UserManagerServlet for check
+2025-01-04 11:03:53,687 INFO  [stdout] (default task-2) Hibernate: select requestdat0_.id as id1_0_, requestdat0_.flag as flag2_0_, requestdat0_.owner as owner3_0_, requestdat0_.r as r4_0_, requestdat0_.x as x5_0_, requestdat0_.y as y6_0_ from Requests requestdat0_ where requestdat0_.owner=?
+2025-01-04 11:04:14,059 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2025-01-04 11:04:14,065 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: EJB subsystem suspension complete
+2025-01-04 11:04:14,068 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2025-01-04 11:04:14,078 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = Server-1.0-SNAPSHOT.war_org.postgresql.Driver_42_7
+2025-01-04 11:04:14,087 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-01-04 11:04:14,100 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2025-01-04 11:04:14,105 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-01-04 11:04:14,106 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2025-01-04 11:04:14,108 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-01-04 11:04:14,121 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 87) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2025-01-04 11:04:14,123 INFO  [org.infinispan.manager.DefaultCacheManager] (MSC service thread 1-6) Stopping cache manager null on null
+2025-01-04 11:04:14,128 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-01-04 11:04:14,128 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2025-01-04 11:04:14,128 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:25666
+2025-01-04 11:04:14,128 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:25664
+2025-01-04 11:04:14,130 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 2.1.3.Final stopping
+2025-01-04 11:04:14,155 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment Server-1.0-SNAPSHOT.war (runtime-name: Server-1.0-SNAPSHOT.war) in 79ms
+2025-01-04 11:04:14,160 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) stopped in 89ms
