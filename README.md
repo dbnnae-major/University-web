@@ -1,4 +1,4 @@
-<img src="https://i.postimg.cc/fb9wpTrj/2.gif" alt="Demo 2" style="width:100%; display:block; margin:auto;" />
+[2.gif](https://postimg.cc/Y4tKmkkh)
 
 # University-web
 Материалы по дисциплине Веб-программирование
